@@ -7,7 +7,6 @@ package gov.uscourts.cad.vbox;
 
 import java.io.InputStream;
 import java.util.Arrays;
-import java.util.List;
 import java.util.Properties;
 import javax.ejb.EJBException;
 
@@ -53,8 +52,12 @@ public class PropertiesBean {
     }
 
     static public PropertiesBean getInstance() {
-        if (instance == null) {
-            instance = new PropertiesBean();
+        try {
+            if (instance == null) {
+                instance = new PropertiesBean();
+            }
+        } catch (Exception ex) {
+            throw new EJBException("PropertiesBean initialization error", ex);
         }
         return instance;
     }
