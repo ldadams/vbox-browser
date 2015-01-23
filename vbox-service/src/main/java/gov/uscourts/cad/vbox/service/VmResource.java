@@ -61,7 +61,11 @@ public class VmResource {
                 }
                 machineValues.add(hostDetail);
             } catch (Exception ex) {
+<<<<<<< HEAD
                 String s = ex.getMessage();
+=======
+
+>>>>>>> f4355b1918ce1989b5bd357e91ba26435cd5b43e
             } finally {
                 manager.disconnect();
             }
@@ -145,7 +149,11 @@ public class VmResource {
         detail.setName(machine.getName());
         detail.setStatus(machine.getState().name());
         detail.setId(machine.getId());
+<<<<<<< HEAD
         //detail.setSessionPid(machine.getSessionPID());
+=======
+        detail.setSessionPid(machine.getSessionPID());
+>>>>>>> f4355b1918ce1989b5bd357e91ba26435cd5b43e
         detail.setCpuCount(machine.getCPUCount());
         detail.setMemorySize(machine.getMemorySize());
         Calendar stateChangedOn = Calendar.getInstance();
