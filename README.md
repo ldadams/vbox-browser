@@ -17,7 +17,7 @@ JavaEE7 Jersey REST service that wraps the VirtualBox vboxjws Java API.  As a pr
 If you are looking for a full featured interface have a look at <a href="http://sourceforge.net/projects/phpvirtualbox/" >PHPVirtualBox</a>
 
 
-Fetures looking to implement:
+Features looking to implement:
   - automating the shutdown -> clone -> startup process for Linux and Windows hosts.
   - browse clones on local/mounted file system.
   - ability to "move" a clone to different host.
